@@ -26,6 +26,12 @@
                 <p>Ping</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <span>{{isp}}</span>
+                <p>ISP</p>
+            </div>
+        </div>
         <form method='POST' action="/">
             <button class="btn btn-primary" id="test-button" type="submit" style="margin: auto;">
                 <span id="test-button-content" class="spinner-grow spinner-grow-sm d-none" role="status" aria-hidden="true"></span>
@@ -37,7 +43,6 @@
     <script>
         document.getElementById("test-button").addEventListener("click", function(){
             document.getElementById("test-button-content").classList.remove("d-none");
-            document.getElementById("test-button-content").innerHTML = "Testing";
             document.getElementById("test-button-content").disabled = true;
         });
     </script>

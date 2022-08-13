@@ -19,8 +19,7 @@ def main():
         upload = round(result["upload"] / 1000000, 2)
         ping = round(result["ping"])
         isp = result["client"]["isp"]
-        # sponsor = result["server"]["sponsor"]
-        # country = result["server"]["country"]
+
 
         return render_template("index.html", download=download, upload=upload, ping=ping, isp=isp)
     else:
